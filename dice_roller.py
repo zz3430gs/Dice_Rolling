@@ -21,7 +21,7 @@ def main():
               '\n6) 20 Sides')
     def roll_die(number_of_sides):
         dice_result=random.randint(1, number_of_sides)
-        print('The %s sided die rolled a :'+dice_result+'.' %(number_of_sides))
+        print('The '+str(number_of_sides)+' sided die rolled a :'+str(dice_result)+'.')
 
     while keep_rolling==True:
         print_main_menu()
