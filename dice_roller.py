@@ -35,6 +35,7 @@ def main():
                 how_many_rolls=int(input("How many times to roll that die?\n"))
                 if dice_type_selected==1:
                     print('1')
+                    A_die(dice_type_selected)
                     for n in range(1,how_many_rolls+1):
                         roll_die(4)
                 elif dice_type_selected==2:
