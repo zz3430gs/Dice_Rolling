@@ -35,22 +35,28 @@ def main():
                 how_many_rolls=int(input("How many times to roll that die?\n"))
                 if dice_type_selected==1:
                     print('1')
-                    how_many_rolls*roll_die(4)
+                    for n in range(1,how_many_rolls+1):
+                        roll_die(4)
                 elif dice_type_selected==2:
                     print('2')
-                    how_many_rolls * roll_die(6)
+                    for n in range(1, how_many_rolls + 1):
+                        roll_die(6)
                 elif dice_type_selected == 3:
                     print('3')
-                    how_many_rolls * roll_die(8)
+                    for n in range(1, how_many_rolls + 1):
+                        roll_die(8)
                 elif dice_type_selected == 4:
                     print('4')
-                    how_many_rolls * roll_die(10)
+                    for n in range(1, how_many_rolls + 1):
+                        roll_die(10)
                 elif dice_type_selected == 5:
                     print('5')
-                    how_many_rolls * roll_die(12)
+                    for n in range(1, how_many_rolls + 1):
+                        roll_die(12)
                 elif dice_type_selected == 6:
                     print('6')
-                    how_many_rolls * roll_die(20)
+                    for n in range(1, how_many_rolls + 1):
+                        roll_die(20)
                 elif dice_type_selected>6 or dice_type_selected<1:
                     print("That is not a valid dice type selection.")
 
